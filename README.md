@@ -18,3 +18,18 @@ struct ContentView: View {
 }
 ```
 
+## 2. Limiting the scroll range
+
+<img width="378" src="https://user-images.githubusercontent.com/47273077/185727403-594cf244-41e5-4e2c-b240-2db1d92fde14.gif">
+
+```swift
+struct ContentView: View {
+  @State private var number = 0.0
+
+  var body: some View {
+    Text("\(number, specifier: "%.1f")")
+      .focusable()
+      .digitalCrownRotation($number, from: 0.0, through: 12.0, by: 0.1)
+  }
+}
+```
