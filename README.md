@@ -33,3 +33,51 @@ struct ContentView: View {
   }
 }
 ```
+
+## 3. Sensitivity
+
+### ■ .heigh
+```swift
+    Text("\(number, specifier: "%.1f")")
+      .focusable()
+      .digitalCrownRotation(
+        $number,
+        from: 0.0,
+        through: 12.0,
+        by: 0.1,
+        sensitivity: .high
+      )
+ ```
+ 
+ <img width="378" src="https://user-images.githubusercontent.com/47273077/185727543-c9481cdc-48bb-48c5-9292-d006c52cf4d6.gif">
+ 
+ ### ■ .midium 
+ ```swift
+     Text("\(number, specifier: "%.1f")")
+      .focusable()
+      .digitalCrownRotation(
+        $number,
+        from: 0.0,
+        through: 12.0,
+        by: 0.1,
+        sensitivity: .medium
+      )
+  ```
+
+<img width="378" src="https://user-images.githubusercontent.com/47273077/185727596-8f496d53-cb6c-4624-97f3-4f09f606528b.gif">
+
+
+ ### ■ .low 
+ ```swift
+     Text("\(number, specifier: "%.1f")")
+      .focusable()
+      .digitalCrownRotation(
+        $number,
+        from: 0.0,
+        through: 12.0,
+        by: 0.1,
+        sensitivity: .low
+      )
+  ```
+
+<img width="378" src="https://user-images.githubusercontent.com/47273077/185727654-53b22d9e-0b39-44e3-8db8-fa0e593899b0.gif">
