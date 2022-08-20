@@ -18,6 +18,8 @@ struct ContentView: View {
 }
 ```
 
+
+---------
 ## 2. Limiting the scroll range
 
 <img width="378" src="https://user-images.githubusercontent.com/47273077/185727403-594cf244-41e5-4e2c-b240-2db1d92fde14.gif">
@@ -34,6 +36,8 @@ struct ContentView: View {
 }
 ```
 
+
+---------
 ## 3. Sensitivity
 
 ### ■ .heigh
@@ -81,3 +85,25 @@ struct ContentView: View {
   ```
 
 <img width="378" src="https://user-images.githubusercontent.com/47273077/185727654-53b22d9e-0b39-44e3-8db8-fa0e593899b0.gif">
+
+---------
+## 4. Wrapping around
+```swift
+    Text("\(number, specifier: "%.1f")")
+      .focusable()
+      .digitalCrownRotation(
+        $number,
+        from: 0.0,
+        through: 12.0,
+        by: 0.1,
+        sensitivity: .low,
+        isContinuous: true
+      )
+```
+
+<img width="378" src="https://user-images.githubusercontent.com/47273077/185730588-38de92d3-68a4-49e8-9ca3-4d2c5f6dc775.gif">
+
+
+
+
+
